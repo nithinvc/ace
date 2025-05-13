@@ -7,7 +7,7 @@ TensorMapping = Mapping[str, torch.Tensor]
 TensorDict = Dict[str, torch.Tensor]
 
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True)
 class Slice:
     """
     Configuration of a python `slice` built-in.
